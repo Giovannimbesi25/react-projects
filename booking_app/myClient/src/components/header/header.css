@@ -1,0 +1,219 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header{
+    background-color: rgb(6, 17, 177);
+    background-image: linear-gradient(rgb(6, 17, 177),rgb(67, 114, 214));
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    
+}
+
+.headerContainer{
+    display: flex;
+    width: 100%;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerContainer listMode{
+    margin-bottom: 0;
+}
+
+.headerContainer>h1{
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.headerContainer>p{
+    margin-top: 1rem;
+}
+
+.headerList{
+    display: flex;
+    gap: 2rem;
+}
+
+.headerListItem{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.headerListItem:hover{
+    border-radius: 10px;
+    color: rgb(255, 255, 87);
+}
+
+.headerListItem>span{
+    display: block;
+    text-align: center;
+}
+
+
+.headerSearch{
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #feae02;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    position: sticky;
+}
+
+.headerSearchItem{
+    display: flex;
+    color: black;
+    justify-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}   
+
+
+.searchIcon{
+    color: black;
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+
+.dateUI{
+    position: absolute;
+    top: 5rem;
+    left: 18rem;
+    
+}
+
+.options{
+    background-color: white;
+    position: absolute;
+    top: 5rem;
+    left: 40rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    padding: 0.5rem;
+}
+
+.optionCounter{
+    margin: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 30px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.optionText{
+    color: darkorange;
+    margin-right: 1rem;
+}
+
+.optionItem{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px;
+    
+}
+
+.counterItem{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.optionCounter:hover{
+    color: darkgoldenrod;
+}
+
+@media screen and (max-width: 1250px) {
+    .headerSearchItem{
+        flex-direction: column;
+    }
+    .options{
+        left: 38rem;        
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .options{
+        left: 35rem;
+        top: 8rem;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    /* .headerSearchItem>span{
+        visibility: collapse;
+    }  */   
+
+
+    .searchIcon{
+        font-size: 1.5rem;
+        width: 70px;
+    }
+
+    .headerSearch{
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 2rem;
+    } 
+
+    .dateUI{
+        position: absolute;
+        top: 120px;
+        left: -10px;
+    }
+    .options{
+        top: 18rem;
+        left: 1rem;        
+    }
+}
+
+
+
+@media screen and (max-width: 450px){
+    .headerList{
+        gap: 1rem;
+    }
+
+    .headerSearch{
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+
+    .dateUI{
+        top: 120px;
+        left: -15%;
+    }
+    .options{
+        font-size: 1rem;
+        top: 17rem;
+        left: -0.5rem;
+    }
+}
+    
